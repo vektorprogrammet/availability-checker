@@ -1,0 +1,20 @@
+{
+  "slackWorkspaces": [
+    {
+      "endpoint": "https://hooks.slack.com/services/XXXXX/XXXXX/XXXXX",
+      "channel": "#log_channel",
+      "username": "bot_name",
+      "icon_emoji": ":robot_face:"
+    },
+    {
+      "endpoint": "https://hooks.slack.com/services/YYYYY/YYYYY/YYYYY",
+      "channel": "#general",
+      "username": "bot_name",
+      "icon_emoji": ":robot_face:"
+    }
+  ],
+  "websites": [
+    "https://example.com",
+    "https://google.com"
+  ]
+}
