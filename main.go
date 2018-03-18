@@ -45,7 +45,10 @@ func (s Slack) Send(message string) {
 var slackWorkspaces SlackWorkspaces
 
 func checkWebsite(url string) bool {
-	resp, err := http.Get(url)
+	client := &http.Client{}
+	req, _ := http.NewRequest("GET", url, nil)
+	req.Header.Set("ignore_geo", "true")
+	resp, err := client.Do(req)
 	if err != nil {
 		return false
 	}
