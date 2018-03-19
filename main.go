@@ -47,7 +47,7 @@ var slackWorkspaces SlackWorkspaces
 func checkWebsite(url string) bool {
 	client := &http.Client{}
 	req, _ := http.NewRequest("GET", url, nil)
-	req.Header.Set("ignore_geo", "true")
+	req.Header.Set("ignore-geo", "true")
 	resp, err := client.Do(req)
 	if err != nil {
 		return false
